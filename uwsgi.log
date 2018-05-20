@@ -1,0 +1,181 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Thu May 10 11:46:36 2018] ***
+compiled with version: 5.4.0 20160609 on 11 November 2017 10:45:41
+os: Linux-4.13.0-39-generic #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/atguigu/work/information_push
+writing pidfile to uwsgi.pid
+detected binary path: /home/atguigu/.virtualenvs/py2/bin/uwsgi
+chdir() to /home/atguigu/work/information_push/
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9001 fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x7d29a0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7d29a0 pid: 66351 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 66351)
+spawned uWSGI worker 1 (pid: 66354, cores: 2)
+spawned uWSGI worker 2 (pid: 66355, cores: 2)
+spawned uWSGI worker 3 (pid: 66356, cores: 2)
+spawned uWSGI worker 4 (pid: 66357, cores: 2)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu May 10 11:47:15 2018] ***
+compiled with version: 5.4.0 20160609 on 11 November 2017 10:45:41
+os: Linux-4.13.0-39-generic #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/atguigu/work/information_push
+writing pidfile to uwsgi.pid
+detected binary path: /home/atguigu/.virtualenvs/py2/bin/uwsgi
+chdir() to /home/atguigu/work/information_push/
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:9001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.15 (64bit) on [Wed May 16 13:49:07 2018] ***
+compiled with version: 5.4.0 20160609 on 11 November 2017 10:45:41
+os: Linux-4.13.0-41-generic #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/atguigu/information_push
+writing pidfile to uwsgi.pid
+detected binary path: /home/atguigu/.local/bin/uwsgi
+chdir() to /home/atguigu/work/information_push/
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9001 fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1c907d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1c907d0 pid: 2896 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2896)
+spawned uWSGI worker 1 (pid: 2899, cores: 2)
+spawned uWSGI worker 2 (pid: 2900, cores: 2)
+spawned uWSGI worker 3 (pid: 2901, cores: 2)
+spawned uWSGI worker 4 (pid: 2902, cores: 2)
+*** Starting uWSGI 2.0.15 (64bit) on [Fri May 18 17:13:00 2018] ***
+compiled with version: 5.4.0 20160609 on 11 November 2017 10:45:41
+os: Linux-4.13.0-41-generic #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/atguigu/information_push
+writing pidfile to uwsgi.pid
+detected binary path: /home/atguigu/.local/bin/uwsgi
+chdir() to /home/atguigu/work/information_push/
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9001 fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xab77d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xab77d0 pid: 19070 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19070)
+spawned uWSGI worker 1 (pid: 19073, cores: 2)
+spawned uWSGI worker 2 (pid: 19074, cores: 2)
+spawned uWSGI worker 3 (pid: 19076, cores: 2)
+spawned uWSGI worker 4 (pid: 19077, cores: 2)
+*** Starting uWSGI 2.0.15 (64bit) on [Sat May 19 15:09:36 2018] ***
+compiled with version: 5.4.0 20160609 on 11 November 2017 10:45:41
+os: Linux-4.13.0-41-generic #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/atguigu/information_push
+writing pidfile to uwsgi.pid
+detected binary path: /home/atguigu/.local/bin/uwsgi
+chdir() to /home/atguigu/work/information_push/
+your processes number limit is 7677
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9001 fd 3
+Python version: 2.7.12 (default, Nov 20 2017, 18:23:56)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1bcb7d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1bcb7d0 pid: 3588 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3588)
+spawned uWSGI worker 1 (pid: 3591, cores: 2)
+spawned uWSGI worker 2 (pid: 3592, cores: 2)
+spawned uWSGI worker 3 (pid: 3593, cores: 2)
+spawned uWSGI worker 4 (pid: 3595, cores: 2)
+Internal Server Error: /receive_information/info/
+Traceback (most recent call last):
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/urls/resolvers.py", line 267, in resolve
+    for pattern in self.url_patterns:
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/urls/resolvers.py", line 310, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/urls/resolvers.py", line 303, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./information_push/urls.py", line 21, in <module>
+    url(r'^receive_information/', include("receive_information.urls")),
+  File "/home/atguigu/.local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./receive_information/urls.py", line 3, in <module>
+    from views import Test
+  File "./receive_information/views.py", line 3, in <module>
+    from rest_framework.views import APIView
+ImportError: No module named rest_framework.views
+[pid: 3595|app: 0|req: 1/1] 172.16.10.53 () {40 vars in 720 bytes} [Sat May 19 07:14:17 2018] GET /receive_information/info/ => generated 105862 bytes in 244 msecs (HTTP/1.1 500) 3 headers in 106 bytes (1 switches on core 0)
