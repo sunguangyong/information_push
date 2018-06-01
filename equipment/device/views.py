@@ -15,14 +15,10 @@ class Device(APIView):
 
 	# 注册直连设备
 	def post(self,request):
-		nodeId = json.loads(request.body).get('nodeId')
 		Token = "Bearer " + request.GET.get("Token")
 		headers = {'Content-Type': 'application/json', "Authorization": Token,
 				   "app_key": request.GET.get("app_id")}
-		params = {
-			"nodeId": nodeId
-		}
-		params = json.dumps(params)
+		params = request.body
 		response = requests.post(url="https://180.101.147.89:8743/iocm/app/reg/v1.2.0/devices", data=params, cert=CERT,
 						 headers=headers, verify=False)
 		return HttpResponse(content=response.text)

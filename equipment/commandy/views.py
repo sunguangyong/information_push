@@ -34,7 +34,7 @@ class Commandys(APIView):
 			}, "expireTime": 0
 		}
 		params = json.dumps(params)
-		response = requests.post(url="https://180.101.147.89:8743/iocm/app/cmd/v1.4.0/deviceCommands", data=params, cert=CERT,
+		response = requests.post(url="https://device.api.ct10649.com:8743/iocm/app/cmd/v1.4.0/deviceCommands", data=params, cert=CERT,
 						  headers=headers, verify=False)
 		return HttpResponse(content=response.text)
 
