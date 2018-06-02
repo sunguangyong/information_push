@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^receive_information/', include("receive_information.urls")),
     url(r'^equipment/', include("equipment.urls")),
+    url(r'^subscribe/',include('subscribe.urls')),	
 ]

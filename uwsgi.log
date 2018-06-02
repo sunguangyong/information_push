@@ -90,3 +90,919 @@ ValueError: No JSON object could be decoded
 [pid: 15769|app: 0|req: 4/12] 172.16.10.153 () {44 vars in 876 bytes} [Mon May 21 07:27:37 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=47914f6b-075c-419e-a5bb-2e87fc753663&Token=879be5202ed1fd3b72314f918256f52 => generated 351 bytes in 327 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
 [pid: 15766|app: 0|req: 5/13] 172.16.10.153 () {44 vars in 876 bytes} [Mon May 21 07:32:08 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=47914f6b-075c-419e-a5bb-2e87fc753663&Token=879be5202ed1fd3b72314f918256f52 => generated 351 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
 [pid: 15771|app: 0|req: 4/14] 172.16.10.153 () {44 vars in 876 bytes} [Mon May 21 07:38:59 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=2db04791-f73d-4368-b3e7-0677b731dae5&Token=879be5202ed1fd3b72314f918256f52 => generated 352 bytes in 166 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+Internal Server Error: /equipment/authentication/auth/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 174, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 172, in get_response
+    response = response.render()
+  File "/usr/lib64/python2.7/site-packages/django/template/response.py", line 160, in render
+    self.content = self.rendered_content
+  File "/usr/lib/python2.7/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/usr/lib/python2.7/site-packages/rest_framework/renderers.py", line 702, in render
+    template = loader.get_template(self.template)
+  File "/usr/lib64/python2.7/site-packages/django/template/loader.py", line 43, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+TemplateDoesNotExist: rest_framework/api.html
+[pid: 15767|app: 0|req: 2/15] 172.16.10.222 () {38 vars in 619 bytes} [Mon May 21 07:56:13 2018] GET /equipment/authentication/auth/ => generated 70948 bytes in 50 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 1)
+[pid: 15769|app: 0|req: 5/16] 172.16.10.222 () {44 vars in 647 bytes} [Mon May 21 07:56:59 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 201 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 3/17] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 07:58:28 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 172 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 6/18] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:02:32 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 161 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15771|app: 0|req: 5/19] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:08:23 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 159 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 6/20] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:19:12 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 171 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15766|app: 0|req: 7/21] 172.16.10.222 () {44 vars in 647 bytes} [Mon May 21 08:20:52 2018] POST /equipment/authentication/auth/ => generated 156 bytes in 158 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 8/22] 172.16.10.222 () {44 vars in 873 bytes} [Mon May 21 08:21:05 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=c76ae579-6c15-4ccc-b5e1-d4a16a3f0bc6&Token=a1fd2bb83ecb8e28d88e444fe65b1d57 => generated 0 bytes in 191 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15766|app: 0|req: 9/23] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:26:30 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 248 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 10/24] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:37:01 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 185 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15771|app: 0|req: 6/25] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 08:50:13 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 130 bytes in 168 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15771|app: 0|req: 7/26] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 10:43:40 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=6a5b21b94bf6f7f6299d12266ea66b1 => generated 70 bytes in 153 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 7/27] 172.16.10.222 () {44 vars in 647 bytes} [Mon May 21 10:43:48 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 166 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 11/28] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 10:44:15 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fa7798be2b762f02aefbba6953c553a => generated 130 bytes in 342 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15771|app: 0|req: 8/29] 172.16.10.222 () {44 vars in 778 bytes} [Mon May 21 10:52:42 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fa7798be2b762f02aefbba6953c553a => generated 130 bytes in 155 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15769|app: 0|req: 8/30] 172.16.10.222 () {44 vars in 778 bytes} [Tue May 22 01:03:10 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fa7798be2b762f02aefbba6953c553a => generated 70 bytes in 139 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15767|app: 0|req: 4/31] 172.16.10.222 () {44 vars in 647 bytes} [Tue May 22 01:03:19 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 176 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 15769|app: 0|req: 9/32] 172.16.10.222 () {44 vars in 776 bytes} [Tue May 22 01:03:42 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=1fa092ca9cee42ee706163d4954675 => generated 130 bytes in 174 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15771|app: 0|req: 9/33] 172.16.10.222 () {44 vars in 776 bytes} [Tue May 22 01:11:28 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=1fa092ca9cee42ee706163d4954675 => generated 130 bytes in 186 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15771|app: 0|req: 10/34] 172.16.10.222 () {44 vars in 776 bytes} [Tue May 22 01:16:41 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=1fa092ca9cee42ee706163d4954675 => generated 130 bytes in 173 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15767|app: 0|req: 5/35] 172.16.10.153 () {44 vars in 647 bytes} [Tue May 22 01:23:41 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 151 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 12/36] 172.16.10.153 () {44 vars in 780 bytes} [Tue May 22 01:26:18 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=841a79cecae19c705f5e7c8f329f6d10 => generated 84 bytes in 147 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15767|app: 0|req: 6/37] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:26:35 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 179 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15771|app: 0|req: 11/38] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:42:40 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 155 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 13/39] 172.16.10.153 () {44 vars in 647 bytes} [Tue May 22 01:49:56 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 175 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 15771|app: 0|req: 12/40] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:53:58 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 173 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15767|app: 0|req: 7/41] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:54:02 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 183 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 14/42] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:54:03 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 15771|app: 0|req: 13/43] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:54:32 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 130 bytes in 179 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+Internal Server Error: /equipment/device/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "./equipment/device/views.py", line 18, in post
+    nodeId = json.loads(request.body).get('nodeId')
+  File "/usr/lib64/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name: line 5 column 1 (char 43)
+[pid: 15766|app: 0|req: 15/44] 172.16.10.153 () {44 vars in 778 bytes} [Tue May 22 01:55:03 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=fadb63c780bde9d48018a6d875186eb => generated 13157 bytes in 17 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 15771)...
+Gracefully killing worker 1 (pid: 15766)...
+Gracefully killing worker 3 (pid: 15769)...
+Gracefully killing worker 2 (pid: 15767)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Tue May 22 02:55:59 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Aug  4 2017, 00:39:18)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0xcc2b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xcc2b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 7861, cores: 2)
+spawned uWSGI worker 2 (pid: 7862, cores: 2)
+spawned uWSGI worker 3 (pid: 7864, cores: 2)
+spawned uWSGI worker 4 (pid: 7866, cores: 2)
+[pid: 7864|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 873 bytes} [Tue May 22 03:08:12 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=dce33781-deea-4b10-8096-f0355bd7894e&Token=a7ebe73e525215f54727f67bfd0a993 => generated 84 bytes in 528 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 7862|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Tue May 22 03:08:24 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 524 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 7861|app: 0|req: 1/3] 172.16.10.153 () {44 vars in 873 bytes} [Tue May 22 03:08:42 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=dce33781-deea-4b10-8096-f0355bd7894e&Token=264e324efd7dc035c0c383835b275d7 => generated 0 bytes in 535 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 7861|app: 0|req: 2/4] 172.16.10.153 () {44 vars in 873 bytes} [Tue May 22 03:09:45 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=dce33781-deea-4b10-8096-f0355bd7894e&Token=264e324efd7dc035c0c383835b275d7 => generated 0 bytes in 157 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 7862)...
+Gracefully killing worker 1 (pid: 7861)...
+Gracefully killing worker 3 (pid: 7864)...
+Gracefully killing worker 4 (pid: 7866)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Tue May 22 03:10:23 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Aug  4 2017, 00:39:18)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Python main interpreter initialized at 0x13a0b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x13a0b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 8211, cores: 2)
+spawned uWSGI worker 2 (pid: 8212, cores: 2)
+spawned uWSGI worker 3 (pid: 8214, cores: 2)
+spawned uWSGI worker 4 (pid: 8216, cores: 2)
+[pid: 8212|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 873 bytes} [Tue May 22 03:10:29 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=dce33781-deea-4b10-8096-f0355bd7894e&Token=264e324efd7dc035c0c383835b275d7 => generated 0 bytes in 545 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8212|app: 0|req: 2/2] 172.16.10.153 () {44 vars in 873 bytes} [Tue May 22 03:15:42 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=dce33781-deea-4b10-8096-f0355bd7894e&Token=264e324efd7dc035c0c383835b275d7 => generated 0 bytes in 174 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 1/3] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 22 06:14:49 2018] GET /receive_information/info/ => generated 55 bytes in 372 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 3/4] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 22 06:14:50 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 2/5] 172.16.10.153 () {44 vars in 647 bytes} [Tue May 22 06:31:44 2018] POST /equipment/authentication/auth/ => generated 152 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 3/6] 172.16.10.153 () {44 vars in 647 bytes} [Tue May 22 06:37:20 2018] POST /equipment/authentication/auth/ => generated 152 bytes in 174 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 4/7] 172.16.10.153 () {42 vars in 817 bytes} [Tue May 22 06:37:47 2018] DELETE /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=50cf6fd47fb37375381c6e4f9eb1e0&device_id=e4fb0645-db70-43e1-8800-fabdea1d4676 => generated 0 bytes in 187 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 1/8] 172.16.10.153 () {42 vars in 817 bytes} [Tue May 22 06:38:27 2018] DELETE /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=50cf6fd47fb37375381c6e4f9eb1e0&device_id=b2821a37-778e-4e84-b884-43b8d4bfebba => generated 0 bytes in 551 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 2/9] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 22 08:19:04 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 3/10] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 22 08:19:04 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 1/11] 172.16.10.153 () {44 vars in 776 bytes} [Tue May 22 08:37:52 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=c0519c57ab53c7d81dc8cc4f49429d => generated 207 bytes in 521 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 5/12] 172.16.10.153 () {44 vars in 776 bytes} [Tue May 22 08:40:54 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=c0519c57ab53c7d81dc8cc4f49429d => generated 128 bytes in 167 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 4/13] 172.16.10.153 () {44 vars in 871 bytes} [Tue May 22 08:42:16 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=862712cd-8953-4753-ae88-d589ef8b81dc&Token=c0519c57ab53c7d81dc8cc4f49429d => generated 0 bytes in 179 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 4/14] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 01:14:11 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 143 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 6/15] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 01:14:33 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 128 bytes in 197 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 5/16] 172.16.10.153 () {44 vars in 871 bytes} [Wed May 23 01:14:56 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=862712cd-8953-4753-ae88-d589ef8b81dc&Token=c0519c57ab53c7d81dc8cc4f49429d => generated 84 bytes in 139 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 7/17] 172.16.10.153 () {44 vars in 873 bytes} [Wed May 23 01:15:07 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=862712cd-8953-4753-ae88-d589ef8b81dc&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 202 bytes in 148 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 2/18] 172.16.10.153 () {44 vars in 873 bytes} [Wed May 23 01:15:42 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=158ab779-cf49-4e71-afda-4fb4937b9093&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 0 bytes in 197 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 6/19] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 01:18:02 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 128 bytes in 182 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 8/20] 172.16.10.153 () {44 vars in 873 bytes} [Wed May 23 01:19:19 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=cbaff7e0-e165-46ed-abbc-1c9cef59601e&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 0 bytes in 166 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 5/21] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 01:19:44 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 128 bytes in 156 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 9/22] 172.16.10.153 () {44 vars in 873 bytes} [Wed May 23 01:20:24 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=b3cdde44-f86d-4140-9526-6001c85a9cf7&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 0 bytes in 173 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 7/23] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 01:21:32 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8214|app: 0|req: 3/24] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 01:21:33 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 10/25] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 01:23:35 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 128 bytes in 162 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8214|app: 0|req: 4/26] 172.16.10.222 () {44 vars in 647 bytes} [Wed May 23 01:24:32 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 173 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 8/27] 172.16.10.222 () {44 vars in 873 bytes} [Wed May 23 01:27:44 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=526454f7-90de-4a4f-bcdb-1223303e300e&Token=a8e69b31205955abe0efe839b81d241 => generated 0 bytes in 165 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 9/28] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 01:36:16 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=677b6f1c53465df9c84cfa4bcd33375 => generated 128 bytes in 156 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 11/29] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 02:21:58 2018] POST /equipment/authentication/auth/ => generated 151 bytes in 178 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 10/30] 172.16.10.153 () {44 vars in 774 bytes} [Wed May 23 02:22:09 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=9ac9cce6849f3373f187f14d188c5 => generated 135 bytes in 191 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 12/31] 172.16.10.153 () {44 vars in 869 bytes} [Wed May 23 02:23:10 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=ea410972-c13f-4a81-b3ea-0036df4e0259&Token=9ac9cce6849f3373f187f14d188c5 => generated 0 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 6/32] 172.16.10.153 () {44 vars in 774 bytes} [Wed May 23 02:26:24 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=9ac9cce6849f3373f187f14d188c5 => generated 135 bytes in 174 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8214|app: 0|req: 5/33] 172.16.10.153 () {44 vars in 869 bytes} [Wed May 23 02:27:02 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=b130f6dd-b127-4fe2-8229-d562c9bae514&Token=9ac9cce6849f3373f187f14d188c5 => generated 0 bytes in 175 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 6/34] 172.16.10.153 () {44 vars in 774 bytes} [Wed May 23 02:30:06 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=9ac9cce6849f3373f187f14d188c5 => generated 135 bytes in 186 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 11/35] 172.16.10.153 () {44 vars in 827 bytes} [Wed May 23 02:31:01 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=863703030727130&Token=9ac9cce6849f3373f187f14d188c5 => generated 202 bytes in 151 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 13/36] 172.16.10.153 () {44 vars in 774 bytes} [Wed May 23 02:31:38 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=9ac9cce6849f3373f187f14d188c5 => generated 135 bytes in 181 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 7/37] 172.16.10.153 () {44 vars in 869 bytes} [Wed May 23 02:32:04 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=ff60507f-92e7-4dc4-ac97-196c803ac5d1&Token=9ac9cce6849f3373f187f14d188c5 => generated 0 bytes in 156 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 7/38] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 03:31:01 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 8/39] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 03:31:01 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 12/40] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 03:32:40 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 161 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8214|app: 0|req: 8/41] 172.16.10.153 () {44 vars in 778 bytes} [Wed May 23 03:33:00 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=5a86e3d09976dbc670e1b868370503d => generated 135 bytes in 167 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 13/42] 172.16.10.153 () {44 vars in 873 bytes} [Wed May 23 03:33:37 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=5a86e3d09976dbc670e1b868370503d => generated 0 bytes in 170 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 14/43] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 03:39:02 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 171 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8214|app: 0|req: 9/44] 172.16.10.153 () {44 vars in 876 bytes} [Wed May 23 03:39:33 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=565e86e0dedddd73bba84e731175f8b => generated 351 bytes in 164 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 14/45] 172.16.10.153 () {44 vars in 876 bytes} [Wed May 23 03:39:40 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=565e86e0dedddd73bba84e731175f8b => generated 351 bytes in 166 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+Internal Server Error: /equipment/commandy/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "./equipment/commandy/views.py", line 25, in post
+    command = json.loads(request.body).get("command")
+  File "/usr/lib64/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.7/json/decoder.py", line 382, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting , delimiter: line 5 column 1 (char 71)
+[pid: 8211|app: 0|req: 15/46] 172.16.10.153 () {44 vars in 876 bytes} [Wed May 23 03:39:43 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=565e86e0dedddd73bba84e731175f8b => generated 13360 bytes in 19 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 10/47] 172.16.10.153 () {44 vars in 876 bytes} [Wed May 23 03:39:52 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=565e86e0dedddd73bba84e731175f8b => generated 351 bytes in 158 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 15/48] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 05:47:53 2018] POST /equipment/authentication/auth/ => generated 152 bytes in 149 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 11/49] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:48:14 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 171 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8212|app: 0|req: 9/50] 172.16.10.153 () {44 vars in 647 bytes} [Wed May 23 05:51:32 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 151 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /
+[pid: 8216|app: 0|req: 16/51] 172.16.10.153 () {40 vars in 662 bytes} [Wed May 23 05:53:33 2018] GET / => generated 2150 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 16/52] 172.16.10.153 () {40 vars in 712 bytes} [Wed May 23 05:53:45 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 17/53] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:06 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 164 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 17/54] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:12 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 18/55] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:15 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 158 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 19/56] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:21 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 164 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 20/57] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:24 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 156 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 18/58] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:28 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 149 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 19/59] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:31 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 485 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 20/60] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:35 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 184 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 21/61] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:39 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 351 bytes in 149 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 21/62] 172.16.10.153 () {44 vars in 874 bytes} [Wed May 23 05:54:43 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=5c120c96-5877-450c-8316-8f5ce7b6d3bc&Token=a3e0ac24983267b0f3f00781234dab => generated 352 bytes in 149 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 12/63] 172.16.10.153 () {46 vars in 701 bytes} [Wed May 23 05:55:25 2018] POST /receive_information/info/ => generated 270 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 22/64] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 06:24:24 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8214|app: 0|req: 13/65] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 06:24:24 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 22/66] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 08:41:14 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 23/67] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 08:41:15 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 24/68] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 12:08:16 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8214|app: 0|req: 14/69] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 23 12:08:16 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 23/70] 172.16.10.153 () {44 vars in 647 bytes} [Thu May 24 01:01:17 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 24/71] 172.16.10.153 () {44 vars in 780 bytes} [Thu May 24 01:01:41 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=12ccb136d1bc6e158dc53d3c3251abd3 => generated 207 bytes in 201 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+hello
+[pid: 8212|app: 0|req: 10/72] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 01:02:31 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 25/73] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 01:02:31 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 25/74] 172.16.10.153 () {44 vars in 780 bytes} [Thu May 24 01:03:53 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=12ccb136d1bc6e158dc53d3c3251abd3 => generated 135 bytes in 157 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8212|app: 0|req: 11/75] 172.16.10.153 () {44 vars in 875 bytes} [Thu May 24 01:05:40 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=48b2b685-ed12-4159-a4d9-5c87fa9daba5&Token=12ccb136d1bc6e158dc53d3c3251abd3 => generated 0 bytes in 168 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 26/76] 172.16.10.153 () {44 vars in 780 bytes} [Thu May 24 01:08:20 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=12ccb136d1bc6e158dc53d3c3251abd3 => generated 136 bytes in 158 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 12/77] 172.16.10.153 () {44 vars in 875 bytes} [Thu May 24 01:09:20 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=eb50a159-c51f-4c87-88ef-98064b1f2e27&Token=12ccb136d1bc6e158dc53d3c3251abd3 => generated 0 bytes in 160 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 13/78] 172.16.10.153 () {44 vars in 647 bytes} [Thu May 24 02:23:29 2018] POST /equipment/authentication/auth/ => generated 152 bytes in 165 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 26/79] 172.16.10.153 () {44 vars in 647 bytes} [Thu May 24 03:01:56 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 154 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 27/80] 172.16.10.153 () {44 vars in 776 bytes} [Thu May 24 03:02:12 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=2b595f34e2a42b43643609ab26611d => generated 135 bytes in 171 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8211|app: 0|req: 27/81] 172.16.10.153 () {44 vars in 871 bytes} [Thu May 24 03:03:24 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=8fb62f43-7402-4bd1-ab5d-41a096145f49&Token=2b595f34e2a42b43643609ab26611d => generated 0 bytes in 159 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 28/82] 172.16.10.153 () {42 vars in 817 bytes} [Thu May 24 03:08:55 2018] DELETE /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=2b595f34e2a42b43643609ab26611d&device_id=8fb62f43-7402-4bd1-ab5d-41a096145f49 => generated 0 bytes in 274 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 8214|app: 0|req: 15/83] 172.16.10.153 () {44 vars in 776 bytes} [Thu May 24 03:10:08 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=2b595f34e2a42b43643609ab26611d => generated 135 bytes in 194 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 29/84] 172.16.10.153 () {44 vars in 871 bytes} [Thu May 24 03:10:33 2018] PUT /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=f6d5c1cd-feec-4609-9d11-412415008855&Token=2b595f34e2a42b43643609ab26611d => generated 0 bytes in 235 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 8216|app: 0|req: 30/85] 172.16.10.153 () {44 vars in 647 bytes} [Thu May 24 03:28:30 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 161 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 28/86] 172.16.10.153 () {44 vars in 876 bytes} [Thu May 24 03:28:50 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=f6d5c1cd-feec-4609-9d11-412415008855&Token=1bae186f158fa351c565fb5d9e758ba => generated 352 bytes in 172 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8216|app: 0|req: 31/87] 172.16.10.153 () {44 vars in 876 bytes} [Thu May 24 03:28:55 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=f6d5c1cd-feec-4609-9d11-412415008855&Token=1bae186f158fa351c565fb5d9e758ba => generated 352 bytes in 170 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 8214|app: 0|req: 16/88] 172.16.10.153 () {44 vars in 876 bytes} [Thu May 24 03:31:59 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=f6d5c1cd-feec-4609-9d11-412415008855&Token=1bae186f158fa351c565fb5d9e758ba => generated 351 bytes in 217 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 8212|app: 0|req: 14/89] 172.16.10.153 () {44 vars in 876 bytes} [Thu May 24 03:32:01 2018] POST /equipment/commandy/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&device_id=f6d5c1cd-feec-4609-9d11-412415008855&Token=1bae186f158fa351c565fb5d9e758ba => generated 351 bytes in 164 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 32/90] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 06:39:49 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 29/91] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 06:39:50 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 33/92] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 08:53:56 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8211|app: 0|req: 30/93] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 24 08:53:56 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 34/94] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 00:36:19 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8214|app: 0|req: 17/95] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 00:36:19 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8214|app: 0|req: 18/96] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 02:51:33 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8214|app: 0|req: 19/97] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 02:51:33 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 31/98] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 06:05:09 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 15/99] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 06:05:09 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 16/100] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 08:34:56 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 35/101] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 08:34:57 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 36/102] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 10:43:00 2018] GET /receive_information/info/ => generated 55 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 37/103] 172.16.10.153 () {40 vars in 727 bytes} [Mon May 28 10:43:00 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 38/104] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 05:56:55 2018] GET /receive_information/info/ => generated 55 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 39/105] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 05:56:56 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 40/106] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 09:07:22 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 41/107] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 09:07:22 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 17/108] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 11:09:06 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8212|app: 0|req: 18/109] 172.16.10.153 () {40 vars in 727 bytes} [Tue May 29 11:09:06 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 8216|app: 0|req: 42/110] 172.16.10.153 () {38 vars in 584 bytes} [Tue May 29 11:44:50 2018] GET /favicon.ico => generated 2183 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 32/111] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 01:13:16 2018] GET /receive_information/info/ => generated 55 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 43/112] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 01:13:16 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 44/113] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 04:45:49 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 45/114] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 04:45:49 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 46/115] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 07:23:23 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8214|app: 0|req: 20/116] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 07:23:23 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8214|app: 0|req: 21/117] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 11:51:04 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 47/118] 172.16.10.153 () {40 vars in 727 bytes} [Wed May 30 11:51:04 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8216|app: 0|req: 48/119] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 31 03:37:29 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 33/120] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 31 03:37:30 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8216|app: 0|req: 49/121] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 31 08:32:41 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8212|app: 0|req: 19/122] 172.16.10.153 () {40 vars in 727 bytes} [Thu May 31 08:32:42 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 8212|app: 0|req: 20/123] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 00:37:42 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 8211|app: 0|req: 34/124] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 00:37:43 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+[pid: 8211|app: 0|req: 35/125] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 01:31:59 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 154 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 8216)...
+Gracefully killing worker 2 (pid: 8212)...
+Gracefully killing worker 3 (pid: 8214)...
+Gracefully killing worker 1 (pid: 8211)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 01:37:23 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1d47b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d47b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 22826, cores: 2)
+spawned uWSGI worker 2 (pid: 22827, cores: 2)
+spawned uWSGI worker 3 (pid: 22829, cores: 2)
+spawned uWSGI worker 4 (pid: 22831, cores: 2)
+[pid: 22827|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 01:37:29 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 765 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 22829|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 01:38:19 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 580 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 22831)...
+Gracefully killing worker 1 (pid: 22826)...
+Gracefully killing worker 3 (pid: 22829)...
+Gracefully killing worker 2 (pid: 22827)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 02:00:25 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1619b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1619b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 23371, cores: 2)
+spawned uWSGI worker 2 (pid: 23372, cores: 2)
+spawned uWSGI worker 3 (pid: 23374, cores: 2)
+spawned uWSGI worker 4 (pid: 23376, cores: 2)
+[pid: 23374|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 02:01:08 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 604 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Internal Server Error: /equipment/device/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/lib/python2.7/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "./equipment/device/views.py", line 18, in post
+    Token = "Bearer " + request.GET.get("Token")
+TypeError: cannot concatenate 'str' and 'NoneType' objects
+[pid: 23374|app: 0|req: 2/2] 172.16.10.153 () {44 vars in 631 bytes} [Fri Jun  1 02:02:58 2018] POST /equipment/device/info/ => generated 12613 bytes in 93 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 1)
+[pid: 23374|app: 0|req: 3/3] 172.16.10.153 () {44 vars in 774 bytes} [Fri Jun  1 02:05:10 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=4e48af9aacd307055d4c0a9a63e14 => generated 60 bytes in 191 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23371|app: 0|req: 1/4] 172.16.10.153 () {44 vars in 774 bytes} [Fri Jun  1 02:06:18 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=4e48af9aacd307055d4c0a9a63e14 => generated 60 bytes in 555 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23376|app: 0|req: 1/5] 172.16.10.153 () {44 vars in 774 bytes} [Fri Jun  1 02:06:29 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=4e48af9aacd307055d4c0a9a63e14 => generated 60 bytes in 569 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23372|app: 0|req: 1/6] 172.16.10.153 () {44 vars in 774 bytes} [Fri Jun  1 02:09:26 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=4e48af9aacd307055d4c0a9a63e14 => generated 60 bytes in 556 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23371|app: 0|req: 2/7] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 02:11:26 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 188 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 23376|app: 0|req: 2/8] 172.16.10.153 () {44 vars in 776 bytes} [Fri Jun  1 02:11:42 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=8d778cf2c51c017f8f1d8664259b29 => generated 60 bytes in 180 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 23376)...
+Gracefully killing worker 3 (pid: 23374)...
+Gracefully killing worker 2 (pid: 23372)...
+Gracefully killing worker 1 (pid: 23371)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 02:17:24 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x22c8b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x22c8b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 24385, cores: 2)
+spawned uWSGI worker 2 (pid: 24386, cores: 2)
+spawned uWSGI worker 3 (pid: 24388, cores: 2)
+spawned uWSGI worker 4 (pid: 24390, cores: 2)
+[pid: 24390|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 776 bytes} [Fri Jun  1 02:17:32 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=8d778cf2c51c017f8f1d8664259b29 => generated 60 bytes in 582 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 24385|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 02:19:44 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 568 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 24390|app: 0|req: 2/3] 172.16.10.153 () {44 vars in 778 bytes} [Fri Jun  1 02:27:08 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=88e18dbab41a64ff34384d7d67f0ba7 => generated 92 bytes in 50184 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 24386|app: 0|req: 1/4] 172.16.10.153 () {44 vars in 776 bytes} [Fri Jun  1 02:29:07 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=8d778cf2c51c017f8f1d8664259b29 => generated 60 bytes in 546 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+hello
+[pid: 24385|app: 0|req: 2/5] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 02:38:59 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 24385|app: 0|req: 3/6] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 02:39:00 2018] GET /receive_information/info/ => generated 55 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+[pid: 24385|app: 0|req: 4/7] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 03:04:53 2018] POST /equipment/authentication/auth/ => generated 156 bytes in 199 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 24385|app: 0|req: 5/8] 172.16.10.153 () {44 vars in 780 bytes} [Fri Jun  1 03:06:41 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=462d47d524636d5555545b3acb60591b => generated 60 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 24385)...
+Gracefully killing worker 2 (pid: 24386)...
+Gracefully killing worker 3 (pid: 24388)...
+Gracefully killing worker 4 (pid: 24390)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 03:28:39 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1a4fb50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1a4fb50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 26107, cores: 2)
+spawned uWSGI worker 2 (pid: 26108, cores: 2)
+spawned uWSGI worker 3 (pid: 26110, cores: 2)
+spawned uWSGI worker 4 (pid: 26112, cores: 2)
+[pid: 26110|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 03:29:13 2018] POST /equipment/authentication/auth/ => generated 156 bytes in 553 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 26107|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 03:29:36 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 548 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 26112|app: 0|req: 1/3] 172.16.10.153 () {44 vars in 774 bytes} [Fri Jun  1 03:30:45 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=f33934ca1181f1fb76d2315c60b82c => generated 103 bytes in 44058 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 26112|app: 0|req: 2/4] 172.16.10.153 () {44 vars in 776 bytes} [Fri Jun  1 03:31:52 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=f33934ca1181f1fb76d2315c60b82c => generated 60 bytes in 137 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 26108|app: 0|req: 1/5] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 03:38:35 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 539 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+hello
+[pid: 26107|app: 0|req: 2/6] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 05:00:22 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+hello
+[pid: 26108|app: 0|req: 2/7] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 05:00:22 2018] GET /receive_information/info/ => generated 55 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 26107)...
+Gracefully killing worker 3 (pid: 26110)...
+Gracefully killing worker 2 (pid: 26108)...
+Gracefully killing worker 4 (pid: 26112)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 06:12:05 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x1acab50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1acab50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 29392, cores: 2)
+spawned uWSGI worker 2 (pid: 29393, cores: 2)
+spawned uWSGI worker 3 (pid: 29395, cores: 2)
+spawned uWSGI worker 4 (pid: 29397, cores: 2)
+[pid: 29393|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:13:13 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 582 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 29397|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 780 bytes} [Fri Jun  1 06:15:06 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=519f867ab848bc4befedcb166b7e5cfc => generated 60 bytes in 569 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 29392|app: 0|req: 1/3] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:34:20 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 1761 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 29397|app: 0|req: 2/4] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:35:10 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 216 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 29392|app: 0|req: 2/5] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:35:21 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 210 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 29397|app: 0|req: 3/6] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:35:52 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 29397|app: 0|req: 4/7] 172.16.10.153 () {44 vars in 780 bytes} [Fri Jun  1 06:39:51 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=519f867ab848bc4befedcb166b7e5cfc => generated 60 bytes in 186 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 29392|app: 0|req: 3/8] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 06:49:14 2018] POST /equipment/authentication/auth/ => generated 201 bytes in 186 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 29397|app: 0|req: 5/9] 172.16.10.153 () {44 vars in 778 bytes} [Fri Jun  1 06:49:58 2018] POST /equipment/device/info/?app_id=Fpof8EsZP6i6WfvnhTpMFyfROQMa&Token=e69b48fde683645efba9830e27abe26 => generated 92 bytes in 50177 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 29395|app: 0|req: 1/10] 172.16.10.153 () {44 vars in 780 bytes} [Fri Jun  1 06:55:08 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=519f867ab848bc4befedcb166b7e5cfc => generated 135 bytes in 575 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 29397)...
+Gracefully killing worker 3 (pid: 29395)...
+Gracefully killing worker 1 (pid: 29392)...
+Gracefully killing worker 2 (pid: 29393)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 06:59:59 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x13dbb50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x13dbb50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 30667, cores: 2)
+spawned uWSGI worker 2 (pid: 30668, cores: 2)
+spawned uWSGI worker 3 (pid: 30670, cores: 2)
+spawned uWSGI worker 4 (pid: 30672, cores: 2)
+<Response [200]>
+[pid: 30672|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 780 bytes} [Fri Jun  1 07:00:34 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=519f867ab848bc4befedcb166b7e5cfc => generated 136 bytes in 580 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 30667|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Fri Jun  1 07:16:23 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 557 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 30672|app: 0|req: 2/3] 172.16.10.153 () {44 vars in 869 bytes} [Fri Jun  1 07:17:41 2018] PUT /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 0 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 30668)...
+Gracefully killing worker 3 (pid: 30670)...
+Gracefully killing worker 1 (pid: 30667)...
+Gracefully killing worker 4 (pid: 30672)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 07:20:45 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xb45b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xb45b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 31123, cores: 2)
+spawned uWSGI worker 2 (pid: 31124, cores: 2)
+spawned uWSGI worker 3 (pid: 31125, cores: 2)
+spawned uWSGI worker 4 (pid: 31127, cores: 2)
+[pid: 31124|app: 0|req: 1/1] 172.16.10.153 () {40 vars in 789 bytes} [Fri Jun  1 07:21:04 2018] GET /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 2004 bytes in 620 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 31127|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 869 bytes} [Fri Jun  1 07:22:14 2018] PUT /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 0 bytes in 574 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 31127|app: 0|req: 2/3] 172.16.10.153 () {40 vars in 789 bytes} [Fri Jun  1 07:23:02 2018] GET /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 2004 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 31127|app: 0|req: 3/4] 172.16.10.153 () {40 vars in 789 bytes} [Fri Jun  1 07:26:44 2018] GET /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 2004 bytes in 191 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 31123|app: 0|req: 1/5] 172.16.10.153 () {42 vars in 817 bytes} [Fri Jun  1 07:34:33 2018] DELETE /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=f48907a4-7997-40a4-a5ea-6df87b67973b&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 0 bytes in 596 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 31123)...
+Gracefully killing worker 4 (pid: 31127)...
+Gracefully killing worker 2 (pid: 31124)...
+Gracefully killing worker 3 (pid: 31125)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 07:40:27 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x17bbb50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x17bbb50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 31561, cores: 2)
+spawned uWSGI worker 2 (pid: 31562, cores: 2)
+spawned uWSGI worker 3 (pid: 31564, cores: 2)
+spawned uWSGI worker 4 (pid: 31566, cores: 2)
+[pid: 31562|app: 0|req: 1/1] 172.16.10.153 () {40 vars in 789 bytes} [Fri Jun  1 07:41:08 2018] GET /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&device_id=6716d6e8-dceb-4f75-9ff6-6fc7ceb92732&Token=2e1f96d4eeb54da95cf21b34acd720 => generated 81 bytes in 581 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+hello
+[pid: 31566|app: 0|req: 1/2] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 07:48:44 2018] GET /receive_information/info/ => generated 55 bytes in 380 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+hello
+[pid: 31561|app: 0|req: 1/3] 172.16.10.153 () {40 vars in 727 bytes} [Fri Jun  1 07:48:46 2018] GET /receive_information/info/ => generated 55 bytes in 388 msecs (HTTP/1.1 200) 3 headers in 98 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 31561)...
+Gracefully killing worker 4 (pid: 31566)...
+Gracefully killing worker 2 (pid: 31562)...
+Gracefully killing worker 3 (pid: 31564)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 09:44:08 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x20f1b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x20f1b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 3431, cores: 2)
+spawned uWSGI worker 2 (pid: 3432, cores: 2)
+spawned uWSGI worker 3 (pid: 3434, cores: 2)
+spawned uWSGI worker 4 (pid: 3436, cores: 2)
+Not Found: /subscribe
+[pid: 3432|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 603 bytes} [Fri Jun  1 09:47:04 2018] POST /subscribe => generated 2288 bytes in 383 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 3432)...
+Gracefully killing worker 3 (pid: 3434)...
+Gracefully killing worker 4 (pid: 3436)...
+Gracefully killing worker 1 (pid: 3431)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Fri Jun  1 10:00:29 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x14b2b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14b2b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 3870, cores: 2)
+spawned uWSGI worker 2 (pid: 3871, cores: 2)
+spawned uWSGI worker 3 (pid: 3873, cores: 2)
+spawned uWSGI worker 4 (pid: 3874, cores: 2)
+[pid: 3873|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Fri Jun  1 10:00:42 2018] POST /subscribe/info/ => generated 9 bytes in 376 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)

@@ -9,6 +9,7 @@ from requests.auth import HTTPBasicAuth
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView
+from conf import CONF
 CERT = ("/etc/nginx/cert/client.crt", "/etc/nginx/cert/client.key")
 
 class Auth(APIView):
@@ -21,8 +22,7 @@ class Auth(APIView):
 		params = {}
 		params["appId"] = app_id
 		params["secret"] = passwd
-		cert = ("/etc/nginx/cert/client.crt", "/etc/nginx/cert/client.key")
-		response = requests.post(url="https://180.101.147.89:8743/iocm/app/sec/v1.1.0/login", data=params, cert=cert,
+		response = requests.post(url=CONF['url']['auth'], data=params, cert=CONF['cert'],
 						  verify=False, headers=headers)
 		return HttpResponse(content=response.text)
 
