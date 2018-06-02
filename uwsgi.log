@@ -1006,3 +1006,383 @@ spawned uWSGI worker 2 (pid: 3871, cores: 2)
 spawned uWSGI worker 3 (pid: 3873, cores: 2)
 spawned uWSGI worker 4 (pid: 3874, cores: 2)
 [pid: 3873|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Fri Jun  1 10:00:42 2018] POST /subscribe/info/ => generated 9 bytes in 376 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 3871)...
+Gracefully killing worker 3 (pid: 3873)...
+Gracefully killing worker 4 (pid: 3874)...
+Gracefully killing worker 1 (pid: 3870)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Jun  2 03:18:45 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x773b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x773b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 22769, cores: 2)
+spawned uWSGI worker 2 (pid: 22770, cores: 2)
+spawned uWSGI worker 3 (pid: 22771, cores: 2)
+spawned uWSGI worker 4 (pid: 22774, cores: 2)
+Internal Server Error: /subscribe/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./information_push/urls.py", line 22, in <module>
+    url(r'^equipment/', include("equipment.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/urls.py", line 6, in <module>
+    url(r'^device/', include("equipment.device.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/device/urls.py", line 3, in <module>
+    from views import Device
+  File "./equipment/device/views.py", line 34
+    cert=CONF['cert'], headers=headers, verify=False)
+        ^
+SyntaxError: invalid syntax
+[pid: 22771|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Sat Jun  2 03:19:09 2018] POST /subscribe/info/ => generated 110389 bytes in 452 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 22769)...
+Gracefully killing worker 3 (pid: 22771)...
+Gracefully killing worker 2 (pid: 22770)...
+Gracefully killing worker 4 (pid: 22774)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Jun  2 03:27:11 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x2552b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2552b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 22925, cores: 2)
+spawned uWSGI worker 2 (pid: 22926, cores: 2)
+spawned uWSGI worker 3 (pid: 22927, cores: 2)
+spawned uWSGI worker 4 (pid: 22930, cores: 2)
+Internal Server Error: /subscribe/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./information_push/urls.py", line 22, in <module>
+    url(r'^equipment/', include("equipment.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/urls.py", line 6, in <module>
+    url(r'^device/', include("equipment.device.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/device/urls.py", line 3, in <module>
+    from views import Device
+  File "./equipment/device/views.py", line 12, in <module>
+    from conf import CONF
+ImportError: cannot import name CONF
+[pid: 22930|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Sat Jun  2 03:27:52 2018] POST /subscribe/info/ => generated 121576 bytes in 453 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 22926)...
+Gracefully killing worker 3 (pid: 22927)...
+Gracefully killing worker 4 (pid: 22930)...
+Gracefully killing worker 1 (pid: 22925)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Jun  2 03:35:30 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xa83b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa83b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 23098, cores: 2)
+spawned uWSGI worker 2 (pid: 23099, cores: 2)
+spawned uWSGI worker 3 (pid: 23100, cores: 2)
+spawned uWSGI worker 4 (pid: 23103, cores: 2)
+Internal Server Error: /subscribe/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./information_push/urls.py", line 22, in <module>
+    url(r'^equipment/', include("equipment.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/urls.py", line 6, in <module>
+    url(r'^device/', include("equipment.device.urls")),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./equipment/device/urls.py", line 3, in <module>
+    from views import Device
+  File "./equipment/device/views.py", line 12, in <module>
+    from information_push.conf import CONF
+ImportError: No module named conf
+[pid: 23099|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Sat Jun  2 03:36:02 2018] POST /subscribe/info/ => generated 121601 bytes in 452 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 23099)...
+Gracefully killing worker 4 (pid: 23103)...
+Gracefully killing worker 3 (pid: 23100)...
+Gracefully killing worker 1 (pid: 23098)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Jun  2 03:40:06 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xad5b50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xad5b50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 23216, cores: 2)
+spawned uWSGI worker 2 (pid: 23217, cores: 2)
+spawned uWSGI worker 3 (pid: 23219, cores: 2)
+spawned uWSGI worker 4 (pid: 23221, cores: 2)
+Internal Server Error: /subscribe/info/
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/lib64/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/lib64/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./information_push/urls.py", line 23, in <module>
+    url(r'^subscribe/',include('subscribe.urls')),
+  File "/usr/lib64/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./subscribe/urls.py", line 3, in <module>
+    from views import SubscribeInfo
+  File "./subscribe/views.py", line 12, in <module>
+    from information_push.conf import CONF
+ImportError: No module named conf
+[pid: 23217|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Sat Jun  2 03:40:15 2018] POST /subscribe/info/ => generated 104675 bytes in 445 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 23219)...
+Gracefully killing worker 2 (pid: 23217)...
+Gracefully killing worker 4 (pid: 23221)...
+Gracefully killing worker 1 (pid: 23216)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /data/guangyong/workspace/work/information_push
+closing all non-uwsgi socket fds > 2 (max_fd = 10000000)...
+found fd 3 mapped to socket 0 (127.0.0.1:9396)
+running /usr/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.14 (64bit) on [Sat Jun  2 03:41:28 2018] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 11 January 2017 19:48:15
+os: Linux-3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016
+nodename: cloud003
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /data/guangyong/workspace/work/information_push
+detected binary path: /usr/bin/uwsgi
+chdir() to /data/guangyong/workspace/work/information_push
+your processes number limit is 4096
+your memory page size is 4096 bytes
+detected max file descriptor number: 10000000
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9396 fd 3
+Python version: 2.7.5 (default, Apr 11 2018, 07:36:10)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x97eb50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x97eb50 pid: 15761 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15761)
+spawned uWSGI worker 1 (pid: 23254, cores: 2)
+spawned uWSGI worker 2 (pid: 23255, cores: 2)
+spawned uWSGI worker 3 (pid: 23257, cores: 2)
+spawned uWSGI worker 4 (pid: 23259, cores: 2)
+[pid: 23255|app: 0|req: 1/1] 172.16.10.153 () {44 vars in 615 bytes} [Sat Jun  2 03:41:38 2018] POST /subscribe/info/ => generated 9 bytes in 375 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 23254|app: 0|req: 1/2] 172.16.10.153 () {44 vars in 647 bytes} [Sat Jun  2 03:43:35 2018] POST /equipment/authentication/auth/ => generated 154 bytes in 5755 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 23254|app: 0|req: 2/3] 172.16.10.153 () {44 vars in 647 bytes} [Sat Jun  2 03:44:14 2018] POST /equipment/authentication/auth/ => generated 155 bytes in 454 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+<Response [504]>
+[pid: 23254|app: 0|req: 4/4] 172.16.10.153 () {44 vars in 780 bytes} [Sat Jun  2 03:44:38 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=462d47d524636d5555545b3acb60591b => generated 92 bytes in 50306 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+<Response [400]>
+[pid: 23254|app: 0|req: 5/5] 172.16.10.153 () {44 vars in 780 bytes} [Sat Jun  2 03:45:33 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=9b2955ce2bd0753dce9b174b7bb0f934 => generated 60 bytes in 298 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+<Response [504]>
+[pid: 23254|app: 0|req: 5/6] 172.16.10.153 () {44 vars in 780 bytes} [Sat Jun  2 03:44:46 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=462d47d524636d5555545b3acb60591b => generated 92 bytes in 50167 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)
+<Response [200]>
+[pid: 23254|app: 0|req: 6/7] 172.16.10.153 () {44 vars in 780 bytes} [Sat Jun  2 03:45:44 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=9b2955ce2bd0753dce9b174b7bb0f934 => generated 136 bytes in 197 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23257|app: 0|req: 1/8] 172.16.10.153 () {44 vars in 647 bytes} [Sat Jun  2 04:43:00 2018] POST /equipment/authentication/auth/ => generated 153 bytes in 767 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+<Response [200]>
+[pid: 23254|app: 0|req: 7/9] 172.16.10.153 () {44 vars in 782 bytes} [Sat Jun  2 04:43:11 2018] POST /equipment/device/info/?app_id=F5K7ECzch2xiO_TjhAvSS7W454ca&Token=f06b57eb492a50848f14f019cb2dd0fc => generated 137 bytes in 215 msecs (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 1)

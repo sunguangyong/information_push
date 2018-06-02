@@ -9,7 +9,7 @@ from requests.auth import HTTPBasicAuth
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView
-from conf import CONF
+from conf.conf import CONF
 class Device(APIView):
 
 	# 注册直连设备
@@ -30,7 +30,7 @@ class Device(APIView):
 				   "app_key": request.GET.get("app_id")}
 
 		response = requests.get(
-			url=CONF['url']['deviceget']+(request.GET['device_id'],
+			url=CONF['url']['deviceget']+request.GET['device_id'],
 			cert=CONF['cert'], headers=headers, verify=False)
 		return HttpResponse(content=response.text)
 

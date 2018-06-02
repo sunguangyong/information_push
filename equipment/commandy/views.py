@@ -10,7 +10,7 @@ from requests.auth import HTTPBasicAuth
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView
-from conf import CONF
+from conf.conf import CONF
 
 
 class Commandys(APIView):
