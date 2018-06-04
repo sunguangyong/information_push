@@ -13,7 +13,7 @@ from conf.conf import CONF
 
 class SubscribeInfo(APIView):
     def post(self, request):
-	return HttpResponse(content=request.body)
+	#return HttpResponse(content=request.body)
 
 	Token = "Bearer " + request.GET.get("Token")
 	headers = {'Content-Type': 'application/json', "Authorization": Token,
