@@ -32,8 +32,14 @@ class Commandys(APIView):
 			}, "expireTime": 0
 		}
 		params = json.dumps(params)
+		print 666666666666666666666,params
+
+
+		print 444444444444444444444444444444444444444,device_id	
+		print 555555555555555555555555,CONF['url']['commandys']
 		response = requests.post(url=CONF['url']['commandys'], data=params, cert=CONF['cert'],
 						  headers=headers, verify=False)
+		print 77777777777777777777,response.text
 		return HttpResponse(content=response.text)
 
 
